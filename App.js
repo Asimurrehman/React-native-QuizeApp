@@ -61,8 +61,8 @@ export default class App extends React.Component {
       //  <ImageBackground source={require('./assets/back.jpg')} style={{width: '100%', height: '100%'}}>
       
       <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
-      <Text style={{ fontSize:40,fontWeight:'bold',color:'white',backgroundColor:'gray'}}>QUIZ APP </Text>
-      <Text  >by Syed Asim Ur Rehman</Text>
+      <Text style={{ fontSize:40,fontWeight:'bold',color:'white',backgroundColor:'gray',padding:10,borderRadius:5}}>QUIZ APP </Text>
+      <Text>Starting....</Text>
       <ActivityIndicator size="large" color="#000000" />
       </View>
       
@@ -82,7 +82,7 @@ export default class App extends React.Component {
     else if(!isCameraOpen && !isQuizStart){
       return (
         <View style={styles.container}>
-          <Text style={{fontSize:30,fontWeight:'bold'}} >QUIZ APP</Text>
+          <Text style={{fontSize:30,fontWeight:'bold',backgroundColor:'skyblue',color:"white",padding:10,borderRadius:5}} >QUIZ APPLICATION</Text>
           {/* <Button title='detect face' onPress={()=>this.setState({isCameraOpen:true})} /> */}
 
 
@@ -91,7 +91,7 @@ export default class App extends React.Component {
 <Text>{'\n'}</Text>
 
 
- <Button title="Start Quize" onPress={this._handleCategoryText.bind(this,9)}/>
+ <Button  title="Pic For Face Detection" onPress={this._handleCategoryText.bind(this,9)}/>
 {/* 
 {
           <View style={styles.category}>

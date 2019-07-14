@@ -56,8 +56,8 @@ async _capturePicture() {
   
   if(detected.faces.length>0){
     Alert.alert(
-      'START QUIZ',
-      'Do you really want to start quiz?',
+      'Face Detect Successfylly',
+      'Now Press Ok To Start Quize',
       [
         // {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
         {
@@ -74,7 +74,7 @@ async _capturePicture() {
       else{
         // Alert.alert('No face found!',[{text: 'OK', onPress:  this.setState({photo:null})}]);
         
-        Alert.alert('Uh-oh!','No face found',[{text: 'OK', onPress: ()=>this.setState({photo:null})}]);
+        Alert.alert('oh Sorry!','No Face Detect',[{text: 'OK', onPress: ()=>this.setState({photo:null})}]);
        
       }
 
